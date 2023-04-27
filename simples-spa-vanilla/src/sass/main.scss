@@ -16,3 +16,37 @@ body {
     border-top: 1px solid #ffffff;
     color: aliceblue;
 }
+
+
+// style products
+.card-container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .card {
+
+        width: 310px;
+        height: auto;
+        border: 1px solid #212114;
+        border-radius: 6px;
+        background-color: #4b4b4b;
+        .card-img {
+            width: 100%;
+            height: 140px;
+            background-color: #999;
+            .card-title {
+                text-align: center;
+                font-size: 14px;
+                font-family: var(--bs-font-sans-serif);
+                color: #212114 !important;
+                .card-preco {
+                    text-align: center;
+                    color: var(--bs-green) !important;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

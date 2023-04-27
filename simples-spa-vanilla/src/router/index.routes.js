@@ -10,6 +10,9 @@ const router = async (route) => {
     case "#/": {
       return content.appendChild(pages.home());
     }
+    case "#/products": {
+      return content.appendChild(pages.products());
+    }
     case "#/posts": {
       return content.appendChild(await pages.posts());
     }
