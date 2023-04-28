@@ -7,6 +7,9 @@ const router = async (route) => {
   console.log(route);
 
   switch (route) {
+    case "": {
+      return content.appendChild(pages.home());
+    }
     case "#/": {
       return content.appendChild(pages.home());
     }
